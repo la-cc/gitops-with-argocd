@@ -15,9 +15,6 @@ spec:
       containers:
         - image: "ghcr.io/la-cc/simple-webapp:1.0.1"
           name: simple-webapp
-          env:
-            - name: APP_COLOR
-              value: "yellow"
           resources:
             requests:
               memory: "64Mi"
