@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rollout-blue-active
+spec:
+  type: ClusterIP
+  selector:
+    app: simple-webapp
+  ports:
+    - protocol: TCP
+      port: 8080
