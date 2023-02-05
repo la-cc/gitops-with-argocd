@@ -20,13 +20,9 @@ serviceAccount:
   name:
 
 podSecurityContext:
-  {}
-  # fsGroup: 2000
-
-securityContext:
   runAsUser: 1000
-  dnsPolicy: ClusterFirst
-  restartPolicy: Always
+
+securityContext: {}
 
 service:
   type: ClusterIP
