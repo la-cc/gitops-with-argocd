@@ -27,6 +27,7 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 80
+  targetPort: 8080
 
 ingress:
   enabled: false
@@ -52,7 +53,7 @@ resources:
 
 env:
   - name: APP_COLOR
-    value: "yellow"
+    value: "red"
 
 nodeSelector: {}
 
