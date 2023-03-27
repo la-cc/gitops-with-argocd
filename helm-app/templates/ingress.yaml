@@ -6,7 +6,6 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     cert-manager.io/cluster-issuer: {{ .Values.ingress.clusterIssuer }}
   name: {{ include "helm-example.fullname" . }}
-  namespace: {{ include "helm-example.fullname" . }}
 spec:
   ingressClassName: nginx # use your ingress class name
   tls:
